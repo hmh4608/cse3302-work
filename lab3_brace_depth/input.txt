@@ -1,0 +1,20 @@
+import blah;
+class Foo
+{
+     void Foo()
+    {
+       System.out.println("braces are fun! {{{{{");    // ignored
+       if (condition)
+       {
+          // also ignored: { 
+	  /*ignore
+	    these
+	    lines*/
+          string a = "{}";
+          // as is this: }
+          if (condition){ {  int b = 1; } } a = 42; 
+	}
+       // what if this were on one line? }}}
+    }
+} 
+//end of program
